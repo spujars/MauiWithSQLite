@@ -1,0 +1,92 @@
+﻿@page "/Expenditure"
+@using Microsoft.Extensions.Logging
+@using  MauiWithSQLite.Data
+
+
+<EditForm Model="expense" OnValidSubmit="AddExpense">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="md-4"><b>Category</b></div>
+    @*<InputText id="category" class="form-control" @bind-Value="expense.Category" />*@
+    <RadzenAutoComplete Data="@Getcategories" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"  Class="w-100" TextProperty="Category" @bind-Value="expense.Category"/>
+    <div class="md-4"><b>Sub category</b></div>
+    <RadzenAutoComplete Data="@GetSubCategories" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"  TextProperty="SubCategory" Class="w-100" @bind-Value="expense.SubCategory" />
+    <div class="md-4"><b>Price</b></div>
+    <RadzenTextBox Class="w-100"  @bind-Value="expense.PriceString" />
+    <hr/>
+    <button class="btn btn-success" type="submit">Submit</button>
+</EditForm>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Category</th>
+      <th scope="col">Sub Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+<Loading IsLoading="expenses.Count==0">
+    @if (expenses != null)
+    {
+        @foreach(var e in expenses)
+        {
+	         <tr>
+              <th scope="row">@e.Id</th>
+              <td>@e.Category</td>
+              <td>@e.SubCategory</td>
+              <td>@e.Price</td>
+              <td><RadzenButton Icon="delete" BusyText="Deleting ..." @bind-Value="e.Id" IsBusy=@busy Click=@(() => DeleteExpense(@e))/></td>
+             </tr>
+	    }
+     }
+</Loading>
+  </tbody>
+</table>
+@code {
+    private Expense expense=new Expense();
+    private List<Expense> Getcategories=new List<Expense>();
+    private List<Expense> GetSubCategories=new List<Expense>();
+
+    public List<Expense> expenses=new List<Expense>();
+
+    bool busy;
+
+    protected override async Task OnInitializedAsync()
+    {
+       await loadExpences();
+    }
+
+    private async void AddExpense()
+    {
+        await App.Database.SavePersonAsync(new Expense
+			{
+				Category = expense.Category.ToUpper(),
+				SubCategory = expense.SubCategory.ToUpper(),
+				Price = expense.Price,
+                EnterdDateTime = DateTime.Now
+			});
+        await loadExpences();
+        StateHasChanged();
+    }
+
+    private async void DeleteExpense(Expense expense)
+    {
+        await App.Database.DeleteExpenseAsync(expense);
+        await loadExpences();
+        StateHasChanged();
+    }
+
+    private async Task loadExpences()
+    {
+        expense.Category = "";
+        expense.SubCategory = "";
+        expense.Price = 1;
+        expenses = await App.Database.GetPeopleAsync();
+        Getcategories = expenses.GroupBy(e=>e.Category).Select(e=>e.First()).ToList();
+        GetSubCategories = expenses.GroupBy(e1=>e1.SubCategory).Select(e1=>e1.First()).ToList();
+    }
+}

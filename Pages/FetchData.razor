@@ -1,0 +1,51 @@
+﻿@page "/fetchdata"
+
+
+@using MauiWithSQLite.Data
+<h5><u>Expense By Category</u></h5>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 offset-lg-3 my-5">
+                <RadzenChart>
+                    <RadzenLineSeries Smooth="true" Data="@categoryDataItems2021" CategoryProperty="Date" Title="2021" ValueProperty="Price" RenderingOrder="1">
+                    <RadzenMarkers MarkerType="MarkerType.Square" />
+                    </RadzenLineSeries>
+                    <RadzenLineSeries Smooth="true" Data="@categoryDataItems2022" CategoryProperty="Date" Title="2022" LineType="LineType.Dashed" ValueProperty="Price">
+                    <RadzenMarkers MarkerType="MarkerType.Square" />
+                    </RadzenLineSeries>
+                </RadzenChart>
+                </div>
+            </div>
+    </div>
+
+
+@code {
+    private List<Expense> Getcategories=new List<Expense>();
+    private List<DataItem> categoryDataItems2021=new List<DataItem>();
+    private List<DataItem> categoryDataItems2022=new List<DataItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Getcategories = await App.Database.GetPeopleAsync();
+
+        categoryDataItems2021 = Getcategories
+                        .GroupBy(l => l.Category)
+                        .Select(cl => new DataItem
+                                {
+                                    Date = cl.First().EnterdDateTime,
+                                    Price = cl.Sum(c => c.Price),
+                            }).Where(l=>l.Date.Year.Equals(2021)).ToList();
+        categoryDataItems2022 = Getcategories
+                    .GroupBy(l => l.Category)
+                    .Select(cl => new DataItem
+                            {
+                                Date = cl.First().EnterdDateTime,
+                                Price = cl.Sum(c => c.Price),
+                            }).Where(l=>l.Date.Year.Equals(2022)).ToList();
+    }
+    class DataItem
+    {
+         public DateTime Date { get; set; }
+        public double  Price { get; set; }
+    }
+}

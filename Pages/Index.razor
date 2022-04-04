@@ -1,0 +1,48 @@
+﻿@page "/"
+
+@using MauiWithSQLite.Data
+<h6><u>Expense By Category</u></h6>
+    <div class="h-50 border border-info rounded">
+                <RadzenChart>
+                    <RadzenDonutSeries Data="@categoryDataItems" Title="For 2022" CategoryProperty="Category" ValueProperty="Price" />
+                </RadzenChart>
+    </div>
+
+<h6><u>Expense by Sub Category</u></h6>
+    <div class="h-50 border border-info rounded">
+                <RadzenChart>
+                    <RadzenDonutSeries Data="@subCategoryDataItems" Title="For 2022" CategoryProperty="Category" ValueProperty="Price" />
+                </RadzenChart>
+    </div>
+
+
+@code {
+    private List<Expense> Getcategories=new List<Expense>();
+    private List<DataItem> categoryDataItems=new List<DataItem>();
+    private List<DataItem> subCategoryDataItems=new List<DataItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Getcategories = await App.Database.GetPeopleAsync();
+
+        categoryDataItems = Getcategories
+                        .GroupBy(l => l.Category)
+                        .Select(cl => new DataItem
+                                {
+                                    Category = cl.First().Category,
+                                    Price = cl.Sum(c => c.Price),
+                                }).ToList();
+        subCategoryDataItems = Getcategories
+                    .GroupBy(l => l.Category)
+                    .Select(cl => new DataItem
+                            {
+                                Category = cl.First().SubCategory,
+                                Price = cl.Sum(c => c.Price),
+                            }).ToList();
+    }
+    class DataItem
+    {
+        public string  Category{ get; set; }
+        public double  Price { get; set; }
+    }
+}

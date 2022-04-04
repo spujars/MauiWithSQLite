@@ -1,0 +1,25 @@
+﻿@page "/FeedBack"
+
+@using MauiWithSQLite.Data
+
+@*@inject IJSRuntime JS *@
+
+<EditForm Model="email" OnValidSubmit="SendLocalEmail">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>Send Feedback</div>
+    <InputTextArea @bind-Value="email.body"></InputTextArea>
+    <button class="btn btn-success" type="submit">Submit</button>
+</EditForm>
+@code {
+
+    private email email;
+    private JSRuntime jSRuntime;
+    protected void SendLocalEmail()
+    {
+        email.toEmailAddress = "satishpujarsk@gmail.com";
+        email.subject = "Expence - APP Feedback";
+        jSRuntime.InvokeAsync<object>("blazorExtensions.SendLocalEmail",
+                  new object[] { email.toEmailAddress, email.subject, email.body });
+    }
+}
