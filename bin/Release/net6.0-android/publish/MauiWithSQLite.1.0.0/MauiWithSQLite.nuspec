@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MauiWithSQLite</id>
+    <version>1.0.0</version>
+    <authors>MauiWithSQLite</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-android31.0">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-ios15.2">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-maccatalyst15.2">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-windows10.0.19041">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Graphics.Win2D" version="1.0.0.30" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.WindowsAppSDK" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

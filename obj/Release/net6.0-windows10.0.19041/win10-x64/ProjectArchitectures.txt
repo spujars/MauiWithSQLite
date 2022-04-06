@@ -1,0 +1,1 @@
+D:\MAUI APPS\Test\MauiWithSQLite\MauiWithSQLite.csproj;neutral

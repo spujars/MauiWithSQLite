@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows10.0.19041
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MauiWithSQLite
+build_property.RootNamespace = MauiWithSQLite
+build_property.ProjectDir = D:\MAUI APPS\Test\MauiWithSQLite\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\MAUI APPS\Test\MauiWithSQLite
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithSQLite.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithSQLite.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Main.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Pages/Expenditure.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhwZW5kaXR1cmUucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Pages/FeedBack.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVlZEJhY2sucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Pages/Index.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Pages/Loading.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9hZGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/_Imports.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-dreo3stzjl
+
+[D:/MAUI APPS/Test/MauiWithSQLite/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = b-mmgp7t5o6g

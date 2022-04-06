@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MauiWithSQLite</id>
+    <version>1.0.0</version>
+    <authors>MauiWithSQLite</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-android31.0">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-ios15.2">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-maccatalyst15.2">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.InteropServices.NFloat.Internal" version="6.0.1" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-windows10.0.19041">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Graphics.Win2D" version="1.0.0.30" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Dependencies" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Extensions" version="6.0.200-preview.14.5099" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.WindowsAppSDK" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Radzen.Blazor" version="3.17.3" exclude="Build,Analyzers" />
+        <dependency id="sqlite-net-pcl" version="1.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\bin\Release\net6.0-android\MauiWithSQLite.runtimeconfig.json" target="lib\net6.0-android31.0\MauiWithSQLite.runtimeconfig.json" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\bin\Release\net6.0-android\MauiWithSQLite.dll" target="lib\net6.0-android31.0\MauiWithSQLite.dll" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\bin\Release\net6.0-android\MauiWithSQLite.xml" target="lib\net6.0-android31.0\MauiWithSQLite.xml" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\obj\Release\net6.0-android\staticwebassets\msbuild.MauiWithSQLite.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\obj\Release\net6.0-android\staticwebassets\msbuild.build.MauiWithSQLite.props" target="build\MauiWithSQLite.props" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\obj\Release\net6.0-android\staticwebassets\msbuild.buildMultiTargeting.MauiWithSQLite.props" target="buildMultiTargeting\MauiWithSQLite.props" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\obj\Release\net6.0-android\staticwebassets\msbuild.buildTransitive.MauiWithSQLite.props" target="buildTransitive\MauiWithSQLite.props" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\obj\Release\net6.0-android\scopedcss\projectbundle\MauiWithSQLite.bundle.scp.css" target="staticwebassets\MauiWithSQLite.bundle.scp.css" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\app.css" target="staticwebassets\css\app.css" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\bootstrap\bootstrap.min.css" target="staticwebassets\css\bootstrap\bootstrap.min.css" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\bootstrap\bootstrap.min.css.map" target="staticwebassets\css\bootstrap\bootstrap.min.css.map" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" target="staticwebassets\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\font\fonts\open-iconic.eot" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.eot" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\font\fonts\open-iconic.otf" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.otf" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\font\fonts\open-iconic.svg" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.svg" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.ttf" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\font\fonts\open-iconic.woff" target="staticwebassets\css\open-iconic\font\fonts\open-iconic.woff" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\FONT-LICENSE" target="staticwebassets\css\open-iconic\FONT-LICENSE" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\ICON-LICENSE" target="staticwebassets\css\open-iconic\ICON-LICENSE" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\css\open-iconic\README.md" target="staticwebassets\css\open-iconic\README.md" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\favicon.ico" target="staticwebassets\favicon.ico" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\GlobalFunctions.js" target="staticwebassets\GlobalFunctions.js" />
+    <file src="D:\MAUI APPS\Test\MauiWithSQLite\wwwroot\index.html" target="staticwebassets\index.html" />
+  </files>
+</package>
